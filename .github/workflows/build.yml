@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Extraire DualSound-projet-android.zip
+        run: unzip -o DualSound-projet-android.zip -d .
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
